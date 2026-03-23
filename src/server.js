@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-if (process.enc.NODE_ENV === "production") job.start();
+if (process.env.NODE_ENV === "production") job.start();
 
 app.use(rateLimiter);
 app.use(express.json()); //middleware to parse incoming JSON requests
