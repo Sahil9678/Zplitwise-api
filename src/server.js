@@ -23,6 +23,10 @@ app.use('/api/transactions', transactionsRoute)
 //     next();
 // })
 
+app.get('/home', (req,res) => {
+    res.status(200).json({ status : "all ok" });
+})
+
 app.get('/api/health', (req,res) => {
     res.status(200).json({ status : "ok" });
 })
