@@ -3,7 +3,6 @@ import {sql} from '../config/db.js';
 export async function getAllTransaction (req,res) {
 
         try{
-            const {user_id} = req.params;
             const user_details = await sql`
                 SELECT * FROM transactions
             `;
